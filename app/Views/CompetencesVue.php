@@ -73,7 +73,6 @@
     </section>
 
 
-
     <section>
 
         <article id="competence1Details" class="competence-details" style="display: none;">
