@@ -1,0 +1,306 @@
+/*--------------------*/
+/* Style pour le site */
+/*--------------------*/
+*{
+    font-family: Mukta, sans-serif;
+}
+
+html{
+    padding : 0 5% 0% 5%;
+}
+
+body{
+    background-color: #222222;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*--------------------------------*/
+/* Style pour les titres / textes */
+/*--------------------------------*/
+h1{
+    font-size: 46px;
+    padding-top: 2%;
+}
+
+h2{
+    font-size: 32px;
+}
+
+h1, h2{
+    color: #FFF;
+    margin: 0;
+}
+
+p{
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+
+
+/*----------------------*/
+/* Style pour le header */
+/*----------------------*/
+header{
+    background: linear-gradient(90deg, rgba(149,0,0,1) 0%, rgba(187,0,0,1) 23%, rgba(217,115,2,1) 72%); 
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+  
+nav{
+    margin: 0 5% 0 0;
+    padding: 0;
+    
+}
+  
+nav a {
+    display: inline-block;
+    margin: 0 35px;
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    transition: color 0.3s, background-color 0.3s; /* Ajout de la transition */
+    padding: 10px; /* Ajuste la zone de survol */
+}
+
+/* Appliquer l'effet de survol sauf pour l'élément Expériences */
+nav a:not([href*="Experiences"]):not([href*="Experiences-Professionnelles"]):not([href*="Experiences-Academiques"]):hover {
+    background: rgba(255, 255, 255, 0.2); /* Fond de couleur avec opacité */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    animation: fadeIn 0.3s ease-in-out;
+    margin: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.dropdown-content li:hover {
+    background-color: #555;
+}
+
+/* Animation pour l'icône */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.dropdown:hover i {
+    transform: rotate(180deg);
+}
+
+.dropdown i {
+    margin-left: 5px;
+    transform: rotate(0deg);
+    transition: transform 0.5s; /* Ajout de la transition */
+}
+
+
+/*----------------------------*/
+/* Style pour l'image banière */
+/*----------------------------*/
+.img-banner{
+    width: 100%;
+    height: 85vh;
+    position: absolute;
+    object-fit: cover;
+    margin-left: -5%;
+}
+
+.image-text{
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    font-size: 90px;
+    font-weight: 800;
+    background: #222222;
+    padding: 5%;
+    bottom: -2vh;
+}
+
+.first-accueil{
+    padding-top: 90vh !important;
+}
+
+/*------------------------------*/
+/* Style pour l'image de profil */
+/*------------------------------*/
+.profil{
+    width: 200px;
+    height: auto;
+    margin: 3% 0%;
+}
+
+
+/*-----------------------*/
+/* Style pour le contenu */
+/*-----------------------*/
+main{
+    min-height: 80vh;
+    margin-top: 120px;
+}
+
+.container{
+
+}
+
+.content{
+    padding: 5%;
+}
+
+.black{
+    background-color: #222222;
+}
+
+.red{
+    border: solid 5px #FFFFFF;
+    border-radius: 30px;
+    background-color: #970000;
+}
+
+/*--------------------------*/
+/* Style pour les 'boutons' */
+/*--------------------------*/
+.bouton-case {
+    position: relative;
+    padding: 5%;
+    margin: 3%;
+    background-color: #970000;
+    overflow: hidden;
+}
+
+.bouton-case p, h2{
+    z-index: 1;
+    position: inherit;
+}
+
+.bouton-case::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(140deg, rgba(149, 0, 0) 5%, rgb(187, 0, 0) 40%, rgb(217, 115, 2) 80%);
+    opacity: 0; /* Initialement, l'overlay est transparent */
+    transition: opacity 0.3s ease; /* Ajoute une transition pour la propriété opacity */
+}
+
+.bouton-case:hover::after {
+    opacity: 1; /* Au survol, l'overlay devient opaque */
+}
+
+.bouton-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.lien-btn{
+    text-decoration: none;
+}
+
+/*-----------------------*/
+/* Style page de contact */
+/*-----------------------*/
+label{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+input, textarea{
+    font-size: 16px;
+}
+
+.help-block{
+    color: red;
+    font-size: 20px;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50; /* Couleur de fond du pop-up */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1000;
+    display: block;
+}
+
+
+/*----------------------*/
+/* Style pour le footer */
+/*----------------------*/
+.footer-container {
+    background: linear-gradient(90deg, rgba(149,0,0,1) 0%, rgba(187,0,0,1) 23%, rgba(217,115,2,1) 72%); 
+    height: auto;
+    display: block;
+    margin-bottom: -1%;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-container h3 {
+    color: #f8f8f8;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+}
+
+.footer-container p {
+    margin: 0;
+    padding: 5px;    
+}
