@@ -236,6 +236,12 @@ main{
     grid-template-columns: repeat(3,1fr);
 }
 
+@media screen and (max-width: 800px){
+    .bouton-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
 .lien-btn{
     text-decoration: none;
 }
