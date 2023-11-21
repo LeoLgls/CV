@@ -28,11 +28,16 @@ class Contact extends BaseController
         $validationRules = [
             'prenom' => 'trim|required|min_length[1]|max_length[20]',
             'nom' => 'trim|required|min_length[1]|max_length[20]',
-            'telephone' => 'required|numeric',
+            'telephone' => 'required|numeric|exact_length[10]',            
             'email' => 'required|valid_email',
             'objet' => 'trim|required|min_length[1]|max_length[30]',
-            'message' => 'required|min_length[1]|max_length[1000]'
+            'message' => 'required|min_length[1]|max_length[1000]',
         ];
+
+        // Ajouter la règle de validation pour la pièce jointe uniquement si elle est fournie
+       // if (!empty($_FILES['userfile']['name'])) {
+      //      $validationRules['userfile'] = 'uploaded[userfile]|max_size[userfile,1024]|ext_in[userfile,pdf,doc,docx]';
+      //  }
 
         $isValid = $this->validate($validationRules);
 
@@ -73,7 +78,21 @@ class Contact extends BaseController
             $email->setFrom($from); 
             $email->setSubject($subject); 
             $email->setMessage($message);
+
+            //Traitement de la pièce jointe
+         //   $attachment = $this->request->getFile('userfile');
+
+            
+         //   if (!empty($_FILES['userfile']['name'])) {
+        //        $attachment = $this->request->getFile('userfile');
+    
+       //         if ($attachment->isValid() && !$attachment->hasMoved())
+       //         {
+      //              $email->attach($attachment->getPathname(), 'inline', $attachment->getName());
+        //        }
+       //     }            
         
+
              // Envoie l'e-mail
             if ($email->send()) {
                 echo view('commun/header');
