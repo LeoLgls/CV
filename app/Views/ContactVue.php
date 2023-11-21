@@ -52,7 +52,6 @@
                 <?= validation_show_error('message') ?>
             </tr>
 
-           
 
         </tbody>
     </table>
@@ -60,5 +59,3 @@
     <?php echo form_submit('submit', 'Valider'); ?>
 
     <?php echo form_close(); ?>
-
-    

@@ -19,7 +19,7 @@ class Contact extends BaseController
         echo view('ContactVue');
         echo view('commun/footer');     
     }
-    
+
 
 
 
@@ -28,16 +28,11 @@ class Contact extends BaseController
         $validationRules = [
             'prenom' => 'trim|required|min_length[1]|max_length[20]',
             'nom' => 'trim|required|min_length[1]|max_length[20]',
-            'telephone' => 'required|numeric|exact_length[10]',            
+            'telephone' => 'required|numeric',
             'email' => 'required|valid_email',
             'objet' => 'trim|required|min_length[1]|max_length[30]',
-            'message' => 'required|min_length[1]|max_length[1000]',
+            'message' => 'required|min_length[1]|max_length[1000]'
         ];
-
-        // Ajouter la règle de validation pour la pièce jointe uniquement si elle est fournie
-       // if (!empty($_FILES['userfile']['name'])) {
-      //      $validationRules['userfile'] = 'uploaded[userfile]|max_size[userfile,1024]|ext_in[userfile,pdf,doc,docx]';
-      //  }
 
         $isValid = $this->validate($validationRules);
 
@@ -53,7 +48,7 @@ class Contact extends BaseController
             // Le formulaire est valide, traiter les données et afficher le succès
             $request = \Config\Services::request();
             $data['info'] = $request->getPost();
-            
+
 
             $email = \Config\Services::email();
 
@@ -79,19 +74,6 @@ class Contact extends BaseController
             $email->setSubject($subject); 
             $email->setMessage($message);
 
-            //Traitement de la pièce jointe
-         //   $attachment = $this->request->getFile('userfile');
-
-            
-         //   if (!empty($_FILES['userfile']['name'])) {
-        //        $attachment = $this->request->getFile('userfile');
-    
-       //         if ($attachment->isValid() && !$attachment->hasMoved())
-       //         {
-      //              $email->attach($attachment->getPathname(), 'inline', $attachment->getName());
-        //        }
-       //     }            
-        
 
              // Envoie l'e-mail
             if ($email->send()) {
@@ -104,23 +86,28 @@ class Contact extends BaseController
                     echo 'Swal.fire({';
                     echo '  icon: "success",';
                     echo '  title: "Mail envoyé avec succès!",';
-                    echo '  showConfirmButton: false,';
-                    echo '  timer: 2000';
                     echo '})';
                 echo '</script>';
-                
-                    
+
+
             } else {
                 // Une erreur s'est produite lors de l'envoi de l'e-mail
                 echo view('commun/header');
+                echo '<span style=\'color: red; font-size: 18px;\'>'.esc($email->printDebugger()).'</span>';
                 echo view('ContactVue');
                 echo view('commun/footer');
-                echo 'Erreur lors de l\'envoi de l\'e-mail';
+
+                echo '<script>';
+                echo 'Swal.fire({';
+                echo '  icon: "error",';
+                echo '  title: "Erreur lors de l\'envoi de l\'e-mail",';
+                echo '})';
+                echo '</script>';
             }
 
         }
 
-      
+
     }
 
 

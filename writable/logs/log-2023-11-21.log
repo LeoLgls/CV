@@ -97,3 +97,362 @@ Stack trace:
 ERROR - 2023-11-21 08:45:45 --> Email: Impossible d'envoyer des emails avec la méthode SMTP de PHP. Votre serveur n'est peut-être pas configuré pour pouvoir utiliser cette méthode.
 ERROR - 2023-11-21 08:45:45 --> 
 INFO - 2023-11-21 08:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 08:50:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 08:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 08:51:36 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): unable to connect to smtp.gmail.com:25 (Connection timed out) in /di/codeigniter/ll210214/CV/system/Email/Email.php:1888
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /di/codeigniter/ll210214/CV/system/Email/Email.php(1888): fsockopen()
+#2 /di/codeigniter/ll210214/CV/system/Email/Email.php(1796): CodeIgniter\Email\Email->SMTPConnect()
+#3 /di/codeigniter/ll210214/CV/system/Email/Email.php(1681): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /di/codeigniter/ll210214/CV/system/Email/Email.php(1575): CodeIgniter\Email\Email->spoolEmail()
+#5 /di/codeigniter/ll210214/CV/app/Controllers/Contact.php(78): CodeIgniter\Email\Email->send()
+#6 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(919): App\Controllers\Contact->save()
+#7 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /di/codeigniter/ll210214/CV/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /di/codeigniter/ll210214/CV/system/Commands/Server/rewrite.php(47): require_once('/di/codeigniter...')
+#11 {main}
+ERROR - 2023-11-21 08:51:36 --> Email: Impossible d'envoyer des emails avec la méthode SMTP de PHP. Votre serveur n'est peut-être pas configuré pour pouvoir utiliser cette méthode.
+ERROR - 2023-11-21 08:51:36 --> 
+INFO - 2023-11-21 08:51:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 08:52:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 08:53:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 08:54:08 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): unable to connect to smtp.gmail.com:25 (Connection timed out) in /di/codeigniter/ll210214/CV/system/Email/Email.php:1888
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /di/codeigniter/ll210214/CV/system/Email/Email.php(1888): fsockopen()
+#2 /di/codeigniter/ll210214/CV/system/Email/Email.php(1796): CodeIgniter\Email\Email->SMTPConnect()
+#3 /di/codeigniter/ll210214/CV/system/Email/Email.php(1681): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /di/codeigniter/ll210214/CV/system/Email/Email.php(1575): CodeIgniter\Email\Email->spoolEmail()
+#5 /di/codeigniter/ll210214/CV/app/Controllers/Contact.php(78): CodeIgniter\Email\Email->send()
+#6 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(919): App\Controllers\Contact->save()
+#7 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /di/codeigniter/ll210214/CV/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /di/codeigniter/ll210214/CV/system/Commands/Server/rewrite.php(47): require_once('/di/codeigniter...')
+#11 {main}
+ERROR - 2023-11-21 08:54:08 --> Email: Impossible d'envoyer des emails avec la méthode SMTP de PHP. Votre serveur n'est peut-être pas configuré pour pouvoir utiliser cette méthode.
+ERROR - 2023-11-21 08:54:08 --> 
+INFO - 2023-11-21 08:54:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 08:57:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 08:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 08:57:55 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): unable to connect to smtp.gmail.com:25 (Connection timed out) in /di/codeigniter/ll210214/CV/system/Email/Email.php:1888
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /di/codeigniter/ll210214/CV/system/Email/Email.php(1888): fsockopen()
+#2 /di/codeigniter/ll210214/CV/system/Email/Email.php(1796): CodeIgniter\Email\Email->SMTPConnect()
+#3 /di/codeigniter/ll210214/CV/system/Email/Email.php(1681): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /di/codeigniter/ll210214/CV/system/Email/Email.php(1575): CodeIgniter\Email\Email->spoolEmail()
+#5 /di/codeigniter/ll210214/CV/app/Controllers/Contact.php(78): CodeIgniter\Email\Email->send()
+#6 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(919): App\Controllers\Contact->save()
+#7 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /di/codeigniter/ll210214/CV/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /di/codeigniter/ll210214/CV/system/Commands/Server/rewrite.php(47): require_once('/di/codeigniter...')
+#11 {main}
+ERROR - 2023-11-21 08:57:55 --> Email: Impossible d'envoyer des emails avec la méthode SMTP de PHP. Votre serveur n'est peut-être pas configuré pour pouvoir utiliser cette méthode.
+ERROR - 2023-11-21 08:57:55 --> 
+INFO - 2023-11-21 08:57:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 09:21:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 09:21:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 09:21:43 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): unable to connect to smtp.gmail.com:25 (Connection timed out) in /di/codeigniter/ll210214/CV/system/Email/Email.php:1888
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /di/codeigniter/ll210214/CV/system/Email/Email.php(1888): fsockopen()
+#2 /di/codeigniter/ll210214/CV/system/Email/Email.php(1796): CodeIgniter\Email\Email->SMTPConnect()
+#3 /di/codeigniter/ll210214/CV/system/Email/Email.php(1681): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /di/codeigniter/ll210214/CV/system/Email/Email.php(1575): CodeIgniter\Email\Email->spoolEmail()
+#5 /di/codeigniter/ll210214/CV/app/Controllers/Contact.php(78): CodeIgniter\Email\Email->send()
+#6 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(919): App\Controllers\Contact->save()
+#7 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /di/codeigniter/ll210214/CV/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /di/codeigniter/ll210214/CV/system/Commands/Server/rewrite.php(47): require_once('/di/codeigniter...')
+#11 {main}
+ERROR - 2023-11-21 09:21:43 --> Email: Impossible d'envoyer des emails avec la méthode SMTP de PHP. Votre serveur n'est peut-être pas configuré pour pouvoir utiliser cette méthode.
+ERROR - 2023-11-21 09:21:43 --> 
+INFO - 2023-11-21 09:21:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 09:22:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 09:22:33 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): unable to connect to smtp.gmail.com:25 (Connection timed out) in /di/codeigniter/ll210214/CV/system/Email/Email.php:1888
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /di/codeigniter/ll210214/CV/system/Email/Email.php(1888): fsockopen()
+#2 /di/codeigniter/ll210214/CV/system/Email/Email.php(1796): CodeIgniter\Email\Email->SMTPConnect()
+#3 /di/codeigniter/ll210214/CV/system/Email/Email.php(1681): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /di/codeigniter/ll210214/CV/system/Email/Email.php(1575): CodeIgniter\Email\Email->spoolEmail()
+#5 /di/codeigniter/ll210214/CV/app/Controllers/Contact.php(78): CodeIgniter\Email\Email->send()
+#6 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(919): App\Controllers\Contact->save()
+#7 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /di/codeigniter/ll210214/CV/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /di/codeigniter/ll210214/CV/system/Commands/Server/rewrite.php(47): require_once('/di/codeigniter...')
+#11 {main}
+ERROR - 2023-11-21 09:22:33 --> Email: Impossible d'envoyer des emails avec la méthode SMTP de PHP. Votre serveur n'est peut-être pas configuré pour pouvoir utiliser cette méthode.
+ERROR - 2023-11-21 09:22:33 --> 
+INFO - 2023-11-21 09:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 09:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 09:24:21 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): unable to connect to smtp.gmail.com:25 (Connection timed out) in /di/codeigniter/ll210214/CV/system/Email/Email.php:1888
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /di/codeigniter/ll210214/CV/system/Email/Email.php(1888): fsockopen()
+#2 /di/codeigniter/ll210214/CV/system/Email/Email.php(1796): CodeIgniter\Email\Email->SMTPConnect()
+#3 /di/codeigniter/ll210214/CV/system/Email/Email.php(1681): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /di/codeigniter/ll210214/CV/system/Email/Email.php(1575): CodeIgniter\Email\Email->spoolEmail()
+#5 /di/codeigniter/ll210214/CV/app/Controllers/Contact.php(78): CodeIgniter\Email\Email->send()
+#6 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(919): App\Controllers\Contact->save()
+#7 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /di/codeigniter/ll210214/CV/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /di/codeigniter/ll210214/CV/system/Commands/Server/rewrite.php(47): require_once('/di/codeigniter...')
+#11 {main}
+ERROR - 2023-11-21 09:24:21 --> Email: Impossible d'envoyer des emails avec la méthode SMTP de PHP. Votre serveur n'est peut-être pas configuré pour pouvoir utiliser cette méthode.
+ERROR - 2023-11-21 09:24:21 --> 
+INFO - 2023-11-21 09:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 09:24:38 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): unable to connect to smtp.gmail.com:25 (Connection timed out) in /di/codeigniter/ll210214/CV/system/Email/Email.php:1888
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /di/codeigniter/ll210214/CV/system/Email/Email.php(1888): fsockopen()
+#2 /di/codeigniter/ll210214/CV/system/Email/Email.php(1796): CodeIgniter\Email\Email->SMTPConnect()
+#3 /di/codeigniter/ll210214/CV/system/Email/Email.php(1681): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /di/codeigniter/ll210214/CV/system/Email/Email.php(1575): CodeIgniter\Email\Email->spoolEmail()
+#5 /di/codeigniter/ll210214/CV/app/Controllers/Contact.php(78): CodeIgniter\Email\Email->send()
+#6 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(919): App\Controllers\Contact->save()
+#7 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /di/codeigniter/ll210214/CV/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /di/codeigniter/ll210214/CV/system/Commands/Server/rewrite.php(47): require_once('/di/codeigniter...')
+#11 {main}
+ERROR - 2023-11-21 09:24:38 --> Email: Impossible d'envoyer des emails avec la méthode SMTP de PHP. Votre serveur n'est peut-être pas configuré pour pouvoir utiliser cette méthode.
+ERROR - 2023-11-21 09:24:38 --> 
+INFO - 2023-11-21 09:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 09:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 09:26:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 09:27:00 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): unable to connect to smtp.gmail.com:25 (Connection timed out) in /di/codeigniter/ll210214/CV/system/Email/Email.php:1888
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /di/codeigniter/ll210214/CV/system/Email/Email.php(1888): fsockopen()
+#2 /di/codeigniter/ll210214/CV/system/Email/Email.php(1796): CodeIgniter\Email\Email->SMTPConnect()
+#3 /di/codeigniter/ll210214/CV/system/Email/Email.php(1681): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /di/codeigniter/ll210214/CV/system/Email/Email.php(1575): CodeIgniter\Email\Email->spoolEmail()
+#5 /di/codeigniter/ll210214/CV/app/Controllers/Contact.php(79): CodeIgniter\Email\Email->send()
+#6 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(919): App\Controllers\Contact->save()
+#7 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /di/codeigniter/ll210214/CV/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /di/codeigniter/ll210214/CV/system/Commands/Server/rewrite.php(47): require_once('/di/codeigniter...')
+#11 {main}
+ERROR - 2023-11-21 09:27:00 --> Email: Impossible d'envoyer des emails avec la méthode SMTP de PHP. Votre serveur n'est peut-être pas configuré pour pouvoir utiliser cette méthode.
+ERROR - 2023-11-21 09:27:00 --> 
+INFO - 2023-11-21 09:27:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 09:28:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 09:28:56 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): unable to connect to smtp.gmail.com:25 (Connection timed out) in /di/codeigniter/ll210214/CV/system/Email/Email.php:1888
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /di/codeigniter/ll210214/CV/system/Email/Email.php(1888): fsockopen()
+#2 /di/codeigniter/ll210214/CV/system/Email/Email.php(1796): CodeIgniter\Email\Email->SMTPConnect()
+#3 /di/codeigniter/ll210214/CV/system/Email/Email.php(1681): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /di/codeigniter/ll210214/CV/system/Email/Email.php(1575): CodeIgniter\Email\Email->spoolEmail()
+#5 /di/codeigniter/ll210214/CV/app/Controllers/Contact.php(79): CodeIgniter\Email\Email->send()
+#6 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(919): App\Controllers\Contact->save()
+#7 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /di/codeigniter/ll210214/CV/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /di/codeigniter/ll210214/CV/system/Commands/Server/rewrite.php(47): require_once('/di/codeigniter...')
+#11 {main}
+ERROR - 2023-11-21 09:28:56 --> Email: Impossible d'envoyer des emails avec la méthode SMTP de PHP. Votre serveur n'est peut-être pas configuré pour pouvoir utiliser cette méthode.
+ERROR - 2023-11-21 09:28:56 --> 
+INFO - 2023-11-21 09:28:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 09:29:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 09:29:54 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): unable to connect to smtp.gmail.com:25 (Connection timed out) in /di/codeigniter/ll210214/CV/system/Email/Email.php:1888
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /di/codeigniter/ll210214/CV/system/Email/Email.php(1888): fsockopen()
+#2 /di/codeigniter/ll210214/CV/system/Email/Email.php(1796): CodeIgniter\Email\Email->SMTPConnect()
+#3 /di/codeigniter/ll210214/CV/system/Email/Email.php(1681): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /di/codeigniter/ll210214/CV/system/Email/Email.php(1575): CodeIgniter\Email\Email->spoolEmail()
+#5 /di/codeigniter/ll210214/CV/app/Controllers/Contact.php(79): CodeIgniter\Email\Email->send()
+#6 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(919): App\Controllers\Contact->save()
+#7 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /di/codeigniter/ll210214/CV/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /di/codeigniter/ll210214/CV/system/Commands/Server/rewrite.php(47): require_once('/di/codeigniter...')
+#11 {main}
+ERROR - 2023-11-21 09:29:54 --> Email: Impossible d'envoyer des emails avec la méthode SMTP de PHP. Votre serveur n'est peut-être pas configuré pour pouvoir utiliser cette méthode.
+ERROR - 2023-11-21 09:29:54 --> 
+INFO - 2023-11-21 09:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 09:31:00 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): unable to connect to smtp.gmail.com:25 (Connection timed out) in /di/codeigniter/ll210214/CV/system/Email/Email.php:1888
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /di/codeigniter/ll210214/CV/system/Email/Email.php(1888): fsockopen()
+#2 /di/codeigniter/ll210214/CV/system/Email/Email.php(1796): CodeIgniter\Email\Email->SMTPConnect()
+#3 /di/codeigniter/ll210214/CV/system/Email/Email.php(1681): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /di/codeigniter/ll210214/CV/system/Email/Email.php(1575): CodeIgniter\Email\Email->spoolEmail()
+#5 /di/codeigniter/ll210214/CV/app/Controllers/Contact.php(79): CodeIgniter\Email\Email->send()
+#6 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(919): App\Controllers\Contact->save()
+#7 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /di/codeigniter/ll210214/CV/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /di/codeigniter/ll210214/CV/system/Commands/Server/rewrite.php(47): require_once('/di/codeigniter...')
+#11 {main}
+ERROR - 2023-11-21 09:31:00 --> Email: Impossible d'envoyer des emails avec la méthode SMTP de PHP. Votre serveur n'est peut-être pas configuré pour pouvoir utiliser cette méthode.
+ERROR - 2023-11-21 09:31:00 --> 
+INFO - 2023-11-21 09:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 09:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 09:51:36 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): unable to connect to smtp.gmail.com:25 (Connection timed out) in /di/codeigniter/ll210214/CV/system/Email/Email.php:1888
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /di/codeigniter/ll210214/CV/system/Email/Email.php(1888): fsockopen()
+#2 /di/codeigniter/ll210214/CV/system/Email/Email.php(1796): CodeIgniter\Email\Email->SMTPConnect()
+#3 /di/codeigniter/ll210214/CV/system/Email/Email.php(1681): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /di/codeigniter/ll210214/CV/system/Email/Email.php(1575): CodeIgniter\Email\Email->spoolEmail()
+#5 /di/codeigniter/ll210214/CV/app/Controllers/Contact.php(79): CodeIgniter\Email\Email->send()
+#6 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(919): App\Controllers\Contact->save()
+#7 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /di/codeigniter/ll210214/CV/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /di/codeigniter/ll210214/CV/system/Commands/Server/rewrite.php(47): require_once('/di/codeigniter...')
+#11 {main}
+ERROR - 2023-11-21 09:51:36 --> Email: Impossible d'envoyer des emails avec la méthode SMTP de PHP. Votre serveur n'est peut-être pas configuré pour pouvoir utiliser cette méthode.
+ERROR - 2023-11-21 09:51:36 --> 
+INFO - 2023-11-21 09:51:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 10:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 10:02:23 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): unable to connect to smtp.gmail.com:25 (Connection timed out) in /di/codeigniter/ll210214/CV/system/Email/Email.php:1888
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /di/codeigniter/ll210214/CV/system/Email/Email.php(1888): fsockopen()
+#2 /di/codeigniter/ll210214/CV/system/Email/Email.php(1796): CodeIgniter\Email\Email->SMTPConnect()
+#3 /di/codeigniter/ll210214/CV/system/Email/Email.php(1681): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /di/codeigniter/ll210214/CV/system/Email/Email.php(1575): CodeIgniter\Email\Email->spoolEmail()
+#5 /di/codeigniter/ll210214/CV/app/Controllers/Contact.php(80): CodeIgniter\Email\Email->send()
+#6 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(919): App\Controllers\Contact->save()
+#7 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /di/codeigniter/ll210214/CV/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /di/codeigniter/ll210214/CV/system/Commands/Server/rewrite.php(47): require_once('/di/codeigniter...')
+#11 {main}
+ERROR - 2023-11-21 10:02:23 --> Email: Impossible d'envoyer des emails avec la méthode SMTP de PHP. Votre serveur n'est peut-être pas configuré pour pouvoir utiliser cette méthode.
+ERROR - 2023-11-21 10:02:23 --> 
+INFO - 2023-11-21 10:02:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 10:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 10:14:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 10:14:33 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): unable to connect to smtp.gmail.com:25 (Connection timed out) in /di/codeigniter/ll210214/CV/system/Email/Email.php:1888
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /di/codeigniter/ll210214/CV/system/Email/Email.php(1888): fsockopen()
+#2 /di/codeigniter/ll210214/CV/system/Email/Email.php(1796): CodeIgniter\Email\Email->SMTPConnect()
+#3 /di/codeigniter/ll210214/CV/system/Email/Email.php(1681): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /di/codeigniter/ll210214/CV/system/Email/Email.php(1575): CodeIgniter\Email\Email->spoolEmail()
+#5 /di/codeigniter/ll210214/CV/app/Controllers/Contact.php(79): CodeIgniter\Email\Email->send()
+#6 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(919): App\Controllers\Contact->save()
+#7 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /di/codeigniter/ll210214/CV/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /di/codeigniter/ll210214/CV/system/Commands/Server/rewrite.php(47): require_once('/di/codeigniter...')
+#11 {main}
+ERROR - 2023-11-21 10:14:33 --> Email: Impossible d'envoyer des emails avec la méthode SMTP de PHP. Votre serveur n'est peut-être pas configuré pour pouvoir utiliser cette méthode.
+ERROR - 2023-11-21 10:14:33 --> 
+INFO - 2023-11-21 10:14:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 10:21:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 10:21:24 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): unable to connect to smtp.gmail.com:25 (Connection timed out) in /di/codeigniter/ll210214/CV/system/Email/Email.php:1888
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /di/codeigniter/ll210214/CV/system/Email/Email.php(1888): fsockopen()
+#2 /di/codeigniter/ll210214/CV/system/Email/Email.php(1796): CodeIgniter\Email\Email->SMTPConnect()
+#3 /di/codeigniter/ll210214/CV/system/Email/Email.php(1681): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /di/codeigniter/ll210214/CV/system/Email/Email.php(1575): CodeIgniter\Email\Email->spoolEmail()
+#5 /di/codeigniter/ll210214/CV/app/Controllers/Contact.php(79): CodeIgniter\Email\Email->send()
+#6 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(919): App\Controllers\Contact->save()
+#7 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /di/codeigniter/ll210214/CV/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /di/codeigniter/ll210214/CV/system/Commands/Server/rewrite.php(47): require_once('/di/codeigniter...')
+#11 {main}
+ERROR - 2023-11-21 10:21:24 --> Email: Impossible d'envoyer des emails avec la méthode SMTP de PHP. Votre serveur n'est peut-être pas configuré pour pouvoir utiliser cette méthode.
+ERROR - 2023-11-21 10:21:24 --> 
+INFO - 2023-11-21 10:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 10:22:04 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): unable to connect to smtp.gmail.com:25 (Connection timed out) in /di/codeigniter/ll210214/CV/system/Email/Email.php:1888
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /di/codeigniter/ll210214/CV/system/Email/Email.php(1888): fsockopen()
+#2 /di/codeigniter/ll210214/CV/system/Email/Email.php(1796): CodeIgniter\Email\Email->SMTPConnect()
+#3 /di/codeigniter/ll210214/CV/system/Email/Email.php(1681): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /di/codeigniter/ll210214/CV/system/Email/Email.php(1575): CodeIgniter\Email\Email->spoolEmail()
+#5 /di/codeigniter/ll210214/CV/app/Controllers/Contact.php(79): CodeIgniter\Email\Email->send()
+#6 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(919): App\Controllers\Contact->save()
+#7 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /di/codeigniter/ll210214/CV/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /di/codeigniter/ll210214/CV/system/Commands/Server/rewrite.php(47): require_once('/di/codeigniter...')
+#11 {main}
+ERROR - 2023-11-21 10:22:04 --> Email: Impossible d'envoyer des emails avec la méthode SMTP de PHP. Votre serveur n'est peut-être pas configuré pour pouvoir utiliser cette méthode.
+ERROR - 2023-11-21 10:22:04 --> 
+INFO - 2023-11-21 10:22:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 10:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 10:22:51 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): unable to connect to smtp.gmail.com:25 (Connection timed out) in /di/codeigniter/ll210214/CV/system/Email/Email.php:1888
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /di/codeigniter/ll210214/CV/system/Email/Email.php(1888): fsockopen()
+#2 /di/codeigniter/ll210214/CV/system/Email/Email.php(1796): CodeIgniter\Email\Email->SMTPConnect()
+#3 /di/codeigniter/ll210214/CV/system/Email/Email.php(1681): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /di/codeigniter/ll210214/CV/system/Email/Email.php(1575): CodeIgniter\Email\Email->spoolEmail()
+#5 /di/codeigniter/ll210214/CV/app/Controllers/Contact.php(79): CodeIgniter\Email\Email->send()
+#6 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(919): App\Controllers\Contact->save()
+#7 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /di/codeigniter/ll210214/CV/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /di/codeigniter/ll210214/CV/system/Commands/Server/rewrite.php(47): require_once('/di/codeigniter...')
+#11 {main}
+ERROR - 2023-11-21 10:22:51 --> Email: Impossible d'envoyer des emails avec la méthode SMTP de PHP. Votre serveur n'est peut-être pas configuré pour pouvoir utiliser cette méthode.
+ERROR - 2023-11-21 10:22:51 --> 
+INFO - 2023-11-21 10:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 10:23:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-21 10:23:36 --> Undefined variable: message
+in APPPATH/Controllers/Contact.php on line 69.
+ 1 APPPATH/Controllers/Contact.php(69): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Contact->save()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/di/codeigniter/ll210214/CV/public/index.php')
+ERROR - 2023-11-21 10:23:51 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): unable to connect to smtp.gmail.com:25 (Connection timed out) in /di/codeigniter/ll210214/CV/system/Email/Email.php:1888
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /di/codeigniter/ll210214/CV/system/Email/Email.php(1888): fsockopen()
+#2 /di/codeigniter/ll210214/CV/system/Email/Email.php(1796): CodeIgniter\Email\Email->SMTPConnect()
+#3 /di/codeigniter/ll210214/CV/system/Email/Email.php(1681): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /di/codeigniter/ll210214/CV/system/Email/Email.php(1575): CodeIgniter\Email\Email->spoolEmail()
+#5 /di/codeigniter/ll210214/CV/app/Controllers/Contact.php(79): CodeIgniter\Email\Email->send()
+#6 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(919): App\Controllers\Contact->save()
+#7 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /di/codeigniter/ll210214/CV/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /di/codeigniter/ll210214/CV/system/Commands/Server/rewrite.php(47): require_once('/di/codeigniter...')
+#11 {main}
+ERROR - 2023-11-21 10:23:51 --> Email: Impossible d'envoyer des emails avec la méthode SMTP de PHP. Votre serveur n'est peut-être pas configuré pour pouvoir utiliser cette méthode.
+ERROR - 2023-11-21 10:23:51 --> 
+INFO - 2023-11-21 10:23:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 10:26:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 10:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 10:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 10:26:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 10:26:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 10:26:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-21 10:26:25 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): unable to connect to smtp.gmail.com:25 (Connection timed out) in /di/codeigniter/ll210214/CV/system/Email/Email.php:1888
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /di/codeigniter/ll210214/CV/system/Email/Email.php(1888): fsockopen()
+#2 /di/codeigniter/ll210214/CV/system/Email/Email.php(1796): CodeIgniter\Email\Email->SMTPConnect()
+#3 /di/codeigniter/ll210214/CV/system/Email/Email.php(1681): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /di/codeigniter/ll210214/CV/system/Email/Email.php(1575): CodeIgniter\Email\Email->spoolEmail()
+#5 /di/codeigniter/ll210214/CV/app/Controllers/Contact.php(79): CodeIgniter\Email\Email->send()
+#6 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(919): App\Controllers\Contact->save()
+#7 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController()
+#8 /di/codeigniter/ll210214/CV/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest()
+#9 /di/codeigniter/ll210214/CV/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 /di/codeigniter/ll210214/CV/system/Commands/Server/rewrite.php(47): require_once('/di/codeigniter...')
+#11 {main}
+ERROR - 2023-11-21 10:26:25 --> Email: Impossible d'envoyer des emails avec la méthode SMTP de PHP. Votre serveur n'est peut-être pas configuré pour pouvoir utiliser cette méthode.
+ERROR - 2023-11-21 10:26:25 --> 
+INFO - 2023-11-21 10:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-21 10:29:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

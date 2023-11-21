@@ -29,7 +29,7 @@
                         <li><a href=<?php echo base_url('Experiences/Experiences-Academiques'); ?>>Expériences académiques</a></li>
                     </ul>
             </div>
-            
+
             <a href="<?php echo base_url(); ?>Competences">Compétences</a>
             <a href="<?php echo base_url(); ?>Projets">Projets</a>
             <a href="<?php echo base_url(); ?>Contact">Contact</a>
