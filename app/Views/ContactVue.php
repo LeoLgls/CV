@@ -52,7 +52,6 @@
                 <?= validation_show_error('message') ?>
             </tr>
 
-
         </tbody>
     </table>
 

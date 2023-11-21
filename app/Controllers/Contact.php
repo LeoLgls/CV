@@ -31,9 +31,17 @@ class Contact extends BaseController
             'telephone' => 'required|numeric',
             'email' => 'required|valid_email',
             'objet' => 'trim|required|min_length[1]|max_length[30]',
-            'message' => 'required|min_length[1]|max_length[1000]'
+            'message' => 'required|min_length[1]|max_length[1000]',
         ];
 
+        //Ajouter la règle de validation pour la pièce jointe uniquement si elle est fournie
+        /*
+        if (!empty($_FILES['userfile']['name'])) 
+        {
+             $validationRules['userfile'] = 'uploaded[userfile]|max_size[userfile,1024]|ext_in[userfile,pdf,doc,docx,jpg,jpeg,png]';
+        }
+        */
+        
         $isValid = $this->validate($validationRules);
 
         if (!$isValid) 
@@ -75,7 +83,21 @@ class Contact extends BaseController
             $email->setMessage($message);
 
 
-             // Envoie l'e-mail
+            // Traitement de la pièce jointe
+            /*
+            if (!empty($_FILES['userfile']['name'])) 
+            {
+                $attachment = $this->request->getFile('userfile');
+
+                if ($attachment->isValid() && !$attachment->hasMoved())
+                {
+                    $email->attach($attachment->getPathname(), 'inline', $attachment->getName());
+                }
+            }
+            */
+
+            
+            // Envoie l'e-mail
             if ($email->send()) {
                 echo view('commun/header');
                 echo view('ContactVue');
