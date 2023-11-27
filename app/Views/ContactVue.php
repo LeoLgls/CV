@@ -1,60 +1,56 @@
-<?php echo form_open('Contact/save'); ?>
+<div class="container">
 
-    <table>
-        <thead>
-            <tr>
-                <h1>Contactez moi :</h1>
-            </tr>
-        </thead>
+    <?php echo form_open('Contact/save'); ?>
 
-        <tbody>
 
-            <tr>
-                <td><label for="prenom">Prénom :</label></td>
-                <td><?php echo form_input('prenom', set_value('prenom'), 'required'); ?></td>
+        <h1>Contactez moi</h1>
+
+    
+            <div>
+                <p><label for="prenom">Prénom :</label></p>
+                <span><?php echo form_input('prenom', set_value('prenom'), 'required'); ?></span>
                 <?= validation_show_error('prenom') ?>
-            </tr>
-
-
-            <tr>
-                <td><label for="nom">Nom :</label></td>
-                <td><?php echo form_input('nom', set_value('nom'), 'required'); ?></td>
+            </div>
+                
+            <div>
+                <p><label for="nom">Nom :</label></p>
+                <span><?php echo form_input('nom', set_value('nom'), 'required'); ?></span>
                 <?= validation_show_error('nom') ?>
-            </tr>
-
-
-            <tr>
-                <td><label for="email">Email :</label></td>
-                <td><?php echo form_input('email', set_value('email'), 'required'); ?></td>
+            </div>
+                
+            <div>
+                <p><label for="email">Email :</label></p>
+                <span><?php echo form_input('email', set_value('email'), 'required'); ?></span>
                 <?= validation_show_error('email') ?>
-            </tr>
+            </div>
 
-
-            <tr>
-                <td><label for="telephone">Téléphone :</label></td>
-                <td><?php echo form_input('telephone', set_value('telephone'), 'required'); ?></td>
+            <div>
+                <p><label for="telephone">Téléphone :</label></p>
+                <span><?php echo form_input('telephone', set_value('telephone'), 'required'); ?></span>
                 <?= validation_show_error('telephone') ?>
+            </div>
 
-            </tr>
-
-
-            <tr>
-                <td><label for="objet">Objet :</label></td>
-                <td><?php echo form_input('objet', set_value('objet'), 'required'); ?></td>
+            <div>
+                <p><label for="objet">Objet :</label></p>
+                <span><?php echo form_input('objet', set_value('objet'), 'required'); ?></span>
                 <?= validation_show_error('objet') ?>
+            </div>
 
-            </tr>
 
-
-            <tr>
-                <td><label for="message">Message :</label></td>
-                <td><?php echo form_textarea('message', set_value('message'), 'required'); ?></td>
+            <div>
+                <p><label for="message">Message :</label></p>
+                <span><?php echo form_textarea('message', set_value('message'), 'required'); ?></span>
                 <?= validation_show_error('message') ?>
-            </tr>
+            </div>
 
-        </tbody>
-    </table>
+    
 
-    <?php echo form_submit('submit', 'Valider'); ?>
+            <span><?php echo form_submit('submit', 'Valider'); ?></span>
 
+
+       
+        
     <?php echo form_close(); ?>
+
+
+</div>
