@@ -39,7 +39,7 @@
     </div>
 
     <div class="content black">
-        <h2>Mon apprentissage du framework Angular</h2>
+        <h2> a mettre dans expériences / projet - peut être précisé dans la partie au dessus - Mon apprentissage du framework Angular</h2>
         <p> 
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt mi ac nibh commodo sodales. 
             Quisque hendrerit dapibus turpis et tempor. Mauris in magna bibendum, varius enim tincidunt,
