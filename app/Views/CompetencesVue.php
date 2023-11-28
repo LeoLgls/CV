@@ -81,7 +81,7 @@
         <article id="competence1Details" class="competence-details" style="display: none;">
             <h1>Soft Skills</h1>
             <p>Plus d'informations sur la Compétence 1...</p>
-            <button onclick="retourEtatInitial()">Retour</button>
+            <button class="retour" onclick="retourEtatInitial()">Retour</button>
         </article>
 
 
@@ -93,7 +93,7 @@
         <article id="competence2Details" class="competence-details" style="display: none;">
             <h1>Développement web</h1>
             <p>Plus d'informations sur la Compétence 2...</p>
-            <button onclick="retourEtatInitial()">Retour</button>
+            <button class="retour" onclick="retourEtatInitial()">Retour</button>
         </article>
 
 
@@ -105,7 +105,7 @@
         <article id="competence3Details" class="competence-details" style="display: none;">
             <h1>Développement d'application</h1>
             <p>Plus d'informations sur la Compétence 3...</p>
-            <button onclick="retourEtatInitial()">Retour</button>
+            <button class="retour" onclick="retourEtatInitial()">Retour</button>
         </article>
     
 

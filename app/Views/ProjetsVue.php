@@ -92,7 +92,7 @@
         <article id="projet1Details" class="projet-details" style="display: none;">
             <h1>Projet Angular</h1>
             <p>Plus d'informations sur la Projet 1...</p>
-            <button onclick="retourEtatInitial()">Retour</button>
+            <button class="retour" onclick="retourEtatInitial()">Retour</button>
         </article>
 
 
@@ -103,7 +103,7 @@
         <article id="projet2Details" class="projet-details" style="display: none;">
             <h1>Générateur de Protfolio</h1>
             <p>Plus d'informations sur la Projet 2...</p>
-            <button onclick="retourEtatInitial()">Retour</button>
+            <button class="retour" onclick="retourEtatInitial()">Retour</button>
         </article>
 
 
@@ -114,7 +114,7 @@
         <article id="projet3Details" class="projet-details" style="display: none;">
             <h1>Les Aventuriers du Rail</h1>
             <p>Plus d'informations sur la Projet 3...</p>
-            <button onclick="retourEtatInitial()">Retour</button>
+            <button class="retour" onclick="retourEtatInitial()">Retour</button>
         </article>
 
 
@@ -126,7 +126,7 @@
         <article id="projet4Details" class="projet-details" style="display: none;">
             <h1>CV sur CodeIgniter 4</h1>
             <p>Plus d'informations sur la Projet 4...</p>
-            <button onclick="retourEtatInitial()">Retour</button>
+            <button class="retour" onclick="retourEtatInitial()">Retour</button>
         </article>
 
 
