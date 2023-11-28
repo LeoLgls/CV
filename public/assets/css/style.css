@@ -200,9 +200,9 @@ main{
 }
 
 
-/**/
+/*-----------------------------*/
 /* Style test image background */
-/**/
+/*-----------------------------*/
 .first-accueil{
     background-image: url("/assets/images/ligne.svg");
     background-repeat: no-repeat;
