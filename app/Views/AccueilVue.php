@@ -10,18 +10,19 @@
     
         <img class="profil" src="/assets/images/profil.jpeg" alt="photo de profil">
         
-        <p> Salut tout le monde ! </p>
+        <div class="zone-tkt">
+            <p> Salut tout le monde ! </p>
 
-        <p> Je m'appelle Léo Langlois, et je suis actuellement plongé dans le monde fascinant de l'informatique. En ce moment, je suis en plein dans ma troisième année du BUT Informatique à l'IUT du Havre, où chaque jour apporte son lot de découvertes et de défis à relever.</p>
+            <p> Je m'appelle Léo Langlois, et je suis actuellement plongé dans le monde fascinant de l'informatique. En ce moment, je suis en plein dans ma troisième année du BUT Informatique à l'IUT du Havre, où chaque jour apporte son lot de découvertes et de défis à relever.</p>
 
-        <p> Le Havre est devenu mon chez-moi pour les études, une ville dynamique qui me réserve toujours des surprises. Entre les lignes de code et les projets passionnants, je m'accorde aussi des pauses bien méritées. Je suis un gars simple, amateur de bons moments entre amis.</p>
+            <p> Le Havre est devenu mon chez-moi pour les études, une ville dynamique qui me réserve toujours des surprises. Entre les lignes de code et les projets passionnants, je m'accorde aussi des pauses bien méritées. Je suis un gars simple, amateur de bons moments entre amis.</p>
 
-        <p> En dehors des cours, on me trouve souvent en train de savourer une partie endiablée de jeux vidéo. C'est mon petit refuge où l'on peut être un héros virtuel, affronter des monstres, et parfois même sauver le monde. Une passion qui trouve son équilibre avec mes moments chill devant une série captivante ou un animé délirant.</p>
+            <p> En dehors des cours, on me trouve souvent en train de savourer une partie endiablée de jeux vidéo. C'est mon petit refuge où l'on peut être un héros virtuel, affronter des monstres, et parfois même sauver le monde. Une passion qui trouve son équilibre avec mes moments chill devant une série captivante ou un animé délirant.</p>
 
-        <p> Ah, et parlons un peu de mes loisirs. J'adore explorer de nouveaux endroits, que ce soit dans ma ville ou au-delà. Les voyages sont une source constante d'inspiration pour moi. Et puis, rien de tel qu'une bonne bouffe entre potes pour égayer la journée ! </p>
-                
-        <p> Voilà un petit aperçu de qui je suis. Toujours prêt à relever de nouveaux défis, à apprendre de nouvelles choses et à partager des moments sympas avec ceux qui croisent ma route. La vie est une aventure, et je compte bien en profiter à fond !</p>
-            
+            <p> Ah, et parlons un peu de mes loisirs. J'adore explorer de nouveaux endroits, que ce soit dans ma ville ou au-delà. Les voyages sont une source constante d'inspiration pour moi. Et puis, rien de tel qu'une bonne bouffe entre potes pour égayer la journée ! </p>
+                    
+            <p> Voilà un petit aperçu de qui je suis. Toujours prêt à relever de nouveaux défis, à apprendre de nouvelles choses et à partager des moments sympas avec ceux qui croisent ma route. La vie est une aventure, et je compte bien en profiter à fond !</p>
+        </div>
     </div>
 
     <div class="content red">
