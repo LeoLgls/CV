@@ -33,6 +33,12 @@ h1, h2{
     margin: 0;
 }
 
+h3{
+    color: rgb(255, 194, 149);
+    font-size: 20px;
+    margin-left: 2%;
+}
+
 p{
     color: #FFFFFF;
     font-size: 18px;
@@ -181,10 +187,6 @@ main{
     margin-top: 120px;
 }
 
-.container{
-
-}
-
 .content{
     padding: 5%;
 }
@@ -199,6 +201,38 @@ main{
     background-color: #970000;
 }
 
+.content-img {
+    display: flex;
+    justify-content: center;
+}
+
+.content-img img{
+    width: 100%;
+    height: auto;
+}
+
+li{
+    color: white;
+    font-size: 18px;
+}
+
+#lien-projets{
+    color: white;
+}
+
+#lien-projets:hover{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#lien-competences{
+    color: white;
+}
+
+#lien-competences:hover{
+    font-size: 20px;
+    font-weight: 800;
+}
 
 /*-----------------------------*/
 /* Style test image background */
@@ -246,6 +280,7 @@ main{
 .bouton-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    margin-bottom: 5%;
 }
 
 @media screen and (max-width: 800px){
@@ -270,10 +305,54 @@ main{
     font-weight: 800;
     cursor: pointer;
     font-size: 20px;
+    width: 100%;
 }
 
 .retour:hover{
     border-radius: 96px 157px;
+}
+
+.btn-retour {
+    padding-left: 80%;
+    padding-bottom: 5%;
+}
+
+
+.comp-list {
+    overflow: hidden;
+    width: 100%;
+}
+
+.image-ban {
+    white-space: nowrap;
+    animation: scroll 40s linear infinite;
+    margin: 2% 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-ban img {
+    width: 9%;
+    margin-right: 20px;
+    max-height: 75px;
+    object-fit: contain;
+}
+
+
+.projet-details .content-img {
+    display: flex;
+    justify-content: center;
+}
+
+.projet-details .content-img img {
+    width: 70%;
+    margin: 2% 0%;
+}
+
+.projet-details .content-img .mobile-img {
+    width: auto;
+    margin: 2% 2%;
+    height: 400px;
 }
 
 /*-------------------------------*/
