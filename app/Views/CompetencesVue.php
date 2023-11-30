@@ -224,7 +224,6 @@
             </div>
 
 
-
             <div class="btn-retour">
                 <button class="retour" onclick="retourEtatInitial()">Retour</button>
             </div>
